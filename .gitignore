@@ -1,0 +1,133 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Credentials and secrets
+*.pem
+*.key
+*.crt
+secrets.json
+credentials.json
+oauth_token.json
+
+# Logs
+*.log
+logs/
+output/logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated files
+output/metadata/*.json
+output/metadata/*.csv
+output/stored_procedures/*.sql
+output/mapping_docs/*.md
+output/mapping_docs/*.html
+output/validation_reports/*.json
+output/validation_reports/*.md
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*~
+.~*
+
+# Package files
+*.whl
+*.tar.gz
+*.zip
+
+# OS X
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Pycache
+.pytest_cache/
+*.py[cod]
+__pycache__/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Mac
+.DS_Store

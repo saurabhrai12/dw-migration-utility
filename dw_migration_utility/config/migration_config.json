@@ -1,0 +1,44 @@
+{
+  "oracle": {
+    "host": "oracle-prod.company.com",
+    "port": 1521,
+    "service_name": "DWPROD",
+    "username": "${ORACLE_USER}",
+    "password": "${ORACLE_PASSWORD}",
+    "schemas": ["DW_STAGE", "DW_CORE", "DW_MARTS"]
+  },
+  "snowflake": {
+    "account": "company.us-east-1",
+    "warehouse": "MIGRATION_WH",
+    "database": "DW_PROD",
+    "schema": "PUBLIC",
+    "schemas": ["PUBLIC", "STAGING", "ANALYTICS"],
+    "username": "${SNOWFLAKE_USER}",
+    "password": "${SNOWFLAKE_PASSWORD}",
+    "role": "SYSADMIN"
+  },
+  "informatica": {
+    "xml_directory": "/path/to/informatica/exports",
+    "file_pattern": "*.xml"
+  },
+  "mapping": {
+    "auto_match": true,
+    "fuzzy_threshold": 0.85,
+    "manual_mapping_file": "config/manual_mappings.json",
+    "ignore_prefixes": ["STG_", "TMP_", "HIST_"],
+    "ignore_suffixes": ["_BACKUP", "_OLD"]
+  },
+  "generation": {
+    "output_directory": "output/stored_procedures",
+    "include_logging": true,
+    "include_error_handling": true,
+    "transaction_mode": "auto",
+    "naming_convention": "SP_{TABLE}_LOAD"
+  },
+  "validation": {
+    "sample_size": 1000,
+    "row_count_check": true,
+    "data_comparison": true,
+    "null_check": true
+  }
+}

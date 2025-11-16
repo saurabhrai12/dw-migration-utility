@@ -1,0 +1,35 @@
+# Database connectivity
+cx_Oracle==8.3.0
+snowflake-connector-python==3.0.0
+snowflake-sqlalchemy==1.4.0
+
+# Data processing
+pandas==2.0.0
+numpy==1.24.0
+
+# XML parsing
+lxml==4.9.0
+xmltodict==0.13.0
+
+# String matching
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.21.0
+
+# Configuration
+pyyaml==6.0
+python-dotenv==1.0.0
+
+# Reporting
+jinja2==3.1.2
+markdown==3.4.0
+
+# Logging
+loguru==0.7.0
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# CLI
+click==8.1.0
+rich==13.0.0

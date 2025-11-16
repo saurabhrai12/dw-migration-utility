@@ -1,0 +1,17 @@
+{
+  "manual_mappings": {
+    "DW_STAGE.STG_CUSTOMER_DATA": "DW_PROD.STAGING.CUSTOMER_DATA",
+    "DW_CORE.CUSTOMER_DIM": "DW_PROD.PUBLIC.DIM_CUSTOMER"
+  },
+  "column_mappings": {
+    "DW_STAGE.STG_CUSTOMER_DATA": {
+      "CUST_ID": "CUSTOMER_ID",
+      "CUST_NAME": "CUSTOMER_NAME",
+      "CUST_EMAIL": "EMAIL_ADDRESS"
+    },
+    "DW_CORE.CUSTOMER_DIM": {
+      "CUST_KEY": "CUSTOMER_KEY",
+      "EFFECTIVE_DT": "EFFECTIVE_DATE"
+    }
+  }
+}
